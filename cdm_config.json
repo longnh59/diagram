@@ -1,0 +1,327 @@
+{
+  "_comment": "CDM thiet ke boi Claude (offline, khong goi API) tu metadata_extraction.json. 8 domain, 32 entity. base_table phai khop chinh xac ten bang trong Excel.",
+
+  "entities": [
+    {
+      "display_name": "Truong chinh (PT)",
+      "base_table": "thongtindiemtruongchinhcapmnththcsthpt",
+      "merged_tables": ["thongtindiemtruongchinhcapmnththcsthpt"],
+      "domain": "CSGD Pho thong"
+    },
+    {
+      "display_name": "Diem truong",
+      "base_table": "thongtindiemtruongcapmnththcsthpttx",
+      "merged_tables": ["thongtindiemtruongcapmnththcsthpttx"],
+      "domain": "CSGD Pho thong"
+    },
+    {
+      "display_name": "CSGD Thuong xuyen",
+      "base_table": "cosogiaoducthuongxuyengiaoducnghenghiepgiaoducthuongxuyenvacactr",
+      "merged_tables": ["cosogiaoducthuongxuyengiaoducnghenghiepgiaoducthuongxuyenvacactr"],
+      "domain": "CSGD Pho thong"
+    },
+    {
+      "display_name": "CSVC truong PT",
+      "base_table": "cosovatchatphonghoctieuhoc",
+      "merged_tables": ["cosovatchatphonghoctieuhoc"],
+      "domain": "CSGD Pho thong"
+    },
+
+    {
+      "display_name": "Lop mam non",
+      "base_table": "lopmamnon",
+      "merged_tables": ["lopmamnon"],
+      "domain": "Lop hoc PT"
+    },
+    {
+      "display_name": "Lop tieu hoc",
+      "base_table": "thongtinlophoctieuhoc",
+      "merged_tables": ["thongtinlophoctieuhoc"],
+      "domain": "Lop hoc PT"
+    },
+    {
+      "display_name": "Lop THCS/THPT",
+      "base_table": "thongtinlophocthcsthpt",
+      "merged_tables": ["thongtinlophocthcsthpt", "thongtinlophocthcsthpt_monhoc"],
+      "domain": "Lop hoc PT"
+    },
+    {
+      "display_name": "Lop GDTX",
+      "base_table": "thongtinlophocgdtx",
+      "merged_tables": ["thongtinlophocgdtx", "thongtinlophocgdtx_monhoc"],
+      "domain": "Lop hoc PT"
+    },
+
+    {
+      "display_name": "Hoc sinh",
+      "base_table": "thongtinhocsinhcapmnththcsthpttx",
+      "merged_tables": [
+        "thongtinhocsinhcapmnththcsthpttx",
+        "thongtinhocsinhcapmnththcsthpttx_nguoivn",
+        "thongtinhocsinhcapmnththcsthpttx_nguoivn_giaytodinhdanhcn",
+        "thongtinhocsinhcapmnththcsthpttx_congdannuocngoai",
+        "thongtinhocsinhcapmnththcsthpttx_congdannuocngoai_giaytodinhdanh",
+        "thongtinhocsinhcapmnththcsthpttx_thongtincha",
+        "thongtinhocsinhcapmnththcsthpttx_thongtinme",
+        "thongtinhocsinhcapmnththcsthpttx_nguoidodau",
+        "thongtinhocsinhcapmnththcsthpttx_khenthuong"
+      ],
+      "domain": "Hoc sinh & Ket qua"
+    },
+    {
+      "display_name": "Ket qua hoc tap",
+      "base_table": "ketquahoctapththcsthpttx",
+      "merged_tables": [
+        "ketquahoctapththcsthpttx",
+        "ketquahoctapththcsthpttx_nguoivn",
+        "ketquahoctapththcsthpttx_cogndannuocngoai",
+        "ketquahoctapththcsthpttx_khenthuong",
+        "ketquahoctapththcsthpttx_kyluat",
+        "ketquahoctapththcsthpttx_diemmon"
+      ],
+      "domain": "Hoc sinh & Ket qua"
+    },
+    {
+      "display_name": "Hoc ba tieu hoc",
+      "base_table": "thongtinsohocbasotieuhoc",
+      "merged_tables": [
+        "thongtinsohocbasotieuhoc",
+        "thongtinsohocbasotieuhoc_quatrinhhoctap",
+        "thongtinsohocbasotieuhoc_dsbangdiem"
+      ],
+      "domain": "Hoc sinh & Ket qua"
+    },
+    {
+      "display_name": "Hoc ba THCS/THPT",
+      "base_table": "thongtinsohocbasothcsthpt",
+      "merged_tables": [
+        "thongtinsohocbasothcsthpt",
+        "thongtinsohocbasothcsthpt_quatrinhhoctap",
+        "thongtinsohocbasothcsthpt_chungchi",
+        "thongtinsohocbasothcsthpt_bangdiem"
+      ],
+      "domain": "Hoc sinh & Ket qua"
+    },
+
+    {
+      "display_name": "Giao vien PT",
+      "base_table": "thongtindoingucanbocsgdcapmamnonththcsthpttx",
+      "merged_tables": [
+        "thongtindoingucanbocsgdcapmamnonththcsthpttx",
+        "thongtindoingucanbocsgdcapmamnonththcsthpttx_nguoivn",
+        "thongtindoingucanbocsgdcapmamnonththcsthpttx_congdannuocngoai",
+        "thongtindoingucanbocsgdcapmamnonththcsthpttx_monday",
+        "thongtindoingucanbocsgdcapmamnonththcsthpttx_monkiemnhiem",
+        "thongtindoingucanbocsgdcapmamnonththcsthpttx_ngoaingu"
+      ],
+      "domain": "Giao vien PT"
+    },
+    {
+      "display_name": "Khen thuong GV",
+      "base_table": "thongtinkhenthuonggiaoviencapmnththcsthpttx",
+      "merged_tables": ["thongtinkhenthuonggiaoviencapmnththcsthpttx"],
+      "domain": "Giao vien PT"
+    },
+    {
+      "display_name": "Ky luat GV",
+      "base_table": "thongtinkyluatgiaoviencapmnththcsthpttx",
+      "merged_tables": ["thongtinkyluatgiaoviencapmnththcsthpttx"],
+      "domain": "Giao vien PT"
+    },
+    {
+      "display_name": "Dao tao BD GV",
+      "base_table": "quatrinhdaotaoboiduonggiaoviencapmnththcsthpttx",
+      "merged_tables": ["quatrinhdaotaoboiduonggiaoviencapmnththcsthpttx"],
+      "domain": "Giao vien PT"
+    },
+
+    {
+      "display_name": "CSGD Dai hoc",
+      "base_table": "cosogiaoducdaihoc",
+      "merged_tables": ["cosogiaoducdaihoc"],
+      "domain": "CSGD Dai hoc"
+    },
+    {
+      "display_name": "Co cau to chuc",
+      "base_table": "thongtincocautochuc",
+      "merged_tables": ["thongtincocautochuc"],
+      "domain": "CSGD Dai hoc"
+    },
+    {
+      "display_name": "Toa nha",
+      "base_table": "thongtintoanha",
+      "merged_tables": ["thongtintoanha"],
+      "domain": "CSGD Dai hoc"
+    },
+    {
+      "display_name": "CSVC & Dat dai",
+      "base_table": "csvcvatrangthietbidatdai",
+      "merged_tables": [
+        "csvcvatrangthietbidatdai",
+        "csvcvatrangthietbidatdai_doituongsohuu_nguoivn",
+        "csvcvatrangthietbidatdai_doituongsohuu_dinhdanhtochuc"
+      ],
+      "domain": "CSGD Dai hoc"
+    },
+    {
+      "display_name": "Phong hoc & Giang duong",
+      "base_table": "phonghocgiangduongvahoitruong",
+      "merged_tables": ["phonghocgiangduongvahoitruong"],
+      "domain": "CSGD Dai hoc"
+    },
+
+    {
+      "display_name": "Nganh dao tao",
+      "base_table": "DanhSachNganhDaoTao",
+      "merged_tables": ["DanhSachNganhDaoTao"],
+      "domain": "Chuong trinh DT"
+    },
+    {
+      "display_name": "Chuong trinh dao tao",
+      "base_table": "ChuongTrinhDaoTao",
+      "merged_tables": ["ChuongTrinhDaoTao"],
+      "domain": "Chuong trinh DT"
+    },
+
+    {
+      "display_name": "Hoc vien",
+      "base_table": "ttchunghocvien",
+      "merged_tables": [
+        "ttchunghocvien",
+        "ttchunghocvien_nguoivn",
+        "ttchunghocvien_nguoivn_giaytodinhdanhcn",
+        "ttchunghocvien_congdannuocngoai",
+        "ttchunghocvien_congdannuocngoai_giaytodinhdanhnn"
+      ],
+      "domain": "Hoc vien & Van bang"
+    },
+    {
+      "display_name": "Hoc tap SV/HV",
+      "base_table": "thongtinhoctapsvdh",
+      "merged_tables": [
+        "thongtinhoctapsvdh",
+        "thongtinhoctapsvdh_nguoivn",
+        "thongtinhoctapsvdh_congdannuocngoai",
+        "ThongTinHocTapSVDH_QuyetDinhThoiHocBaoLuu"
+      ],
+      "domain": "Hoc vien & Van bang"
+    },
+    {
+      "display_name": "Van bang chung chi",
+      "base_table": "VanBangChungChi",
+      "merged_tables": ["VanBangChungChi", "VanBangChungChi_ThongTinHieuChinh"],
+      "domain": "Hoc vien & Van bang"
+    },
+    {
+      "display_name": "Khen thuong (DH)",
+      "base_table": "KhenThuong",
+      "merged_tables": ["KhenThuong", "KhenThuong_NguoiVN", "KhenThuong_CongDanNuocNgoai"],
+      "domain": "Hoc vien & Van bang"
+    },
+    {
+      "display_name": "Ky luat (DH)",
+      "base_table": "KyLuat",
+      "merged_tables": ["KyLuat", "KyLuat_NguoiVN", "KyLuat_CongDanNuocNgoai"],
+      "domain": "Hoc vien & Van bang"
+    },
+
+    {
+      "display_name": "Can bo giang vien",
+      "base_table": "ThongTinCanBoGiangVien",
+      "merged_tables": [
+        "ThongTinCanBoGiangVien",
+        "ThongTinCanBoGiangVien_NguoiVN",
+        "ThongTinCanBoGiangVien_NguoiVN_GiayToDinhDanhCN",
+        "ThongTinCanBoGiangVien_CongDanNuocNgoai",
+        "ThongTinCanBoGiangVien_CongDanNuocNgoai_GiayToDinhDanhNN"
+      ],
+      "domain": "Can bo giang vien"
+    },
+    {
+      "display_name": "Phong ban cong tac",
+      "base_table": "PhongBanDonViCongTac",
+      "merged_tables": [
+        "PhongBanDonViCongTac",
+        "PhongBanDonViCongTac_NguoiVN",
+        "PhongBanDonViCongTac_CongDanNuocNgoai"
+      ],
+      "domain": "Can bo giang vien"
+    },
+    {
+      "display_name": "Qua trinh cong tac",
+      "base_table": "QuaTrinhCongTacCuaCanBoGiangVien",
+      "merged_tables": [
+        "QuaTrinhCongTacCuaCanBoGiangVien",
+        "QuaTrinhCongTacCuaCanBoGiangVien_NguoiVN",
+        "QuaTrinhCongTacCuaCanBoGiangVien_CongDanNuocNgoai"
+      ],
+      "domain": "Can bo giang vien"
+    },
+    {
+      "display_name": "Qua trinh dao tao BD",
+      "base_table": "QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien",
+      "merged_tables": [
+        "QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien",
+        "QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien_NguoiVN",
+        "QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien_CongDanNuocNgoai"
+      ],
+      "domain": "Can bo giang vien"
+    }
+  ],
+
+  "relationships": [
+    {"from_table": "thongtindiemtruongchinhcapmnththcsthpt", "to_table": "thongtindiemtruongcapmnththcsthpttx",          "type": "1-n", "label": "co diem truong"},
+    {"from_table": "thongtindiemtruongchinhcapmnththcsthpt", "to_table": "lopmamnon",                                     "type": "1-n", "label": "co lop MN"},
+    {"from_table": "thongtindiemtruongchinhcapmnththcsthpt", "to_table": "thongtinlophoctieuhoc",                        "type": "1-n", "label": "co lop TH"},
+    {"from_table": "thongtindiemtruongchinhcapmnththcsthpt", "to_table": "thongtinlophocthcsthpt",                       "type": "1-n", "label": "co lop THCS/THPT"},
+    {"from_table": "thongtindiemtruongchinhcapmnththcsthpt", "to_table": "thongtinhocsinhcapmnththcsthpttx",             "type": "1-n", "label": "co hoc sinh"},
+    {"from_table": "thongtindiemtruongchinhcapmnththcsthpt", "to_table": "thongtindoingucanbocsgdcapmamnonththcsthpttx", "type": "1-n", "label": "co giao vien"},
+    {"from_table": "thongtindiemtruongchinhcapmnththcsthpt", "to_table": "cosovatchatphonghoctieuhoc",                   "type": "1-n", "label": "co CSVC"},
+    {"from_table": "cosogiaoducthuongxuyengiaoducnghenghiepgiaoducthuongxuyenvacactr", "to_table": "thongtinlophocgdtx", "type": "1-n", "label": "co lop GDTX"},
+
+    {"from_table": "thongtinlophoctieuhoc", "to_table": "thongtinhocsinhcapmnththcsthpttx", "type": "1-n", "label": "gom hoc sinh"},
+    {"from_table": "thongtinlophocthcsthpt", "to_table": "thongtinhocsinhcapmnththcsthpttx", "type": "1-n", "label": "gom hoc sinh"},
+    {"from_table": "thongtinlophocgdtx", "to_table": "thongtinhocsinhcapmnththcsthpttx",     "type": "1-n", "label": "gom hoc sinh"},
+
+    {"from_table": "thongtinhocsinhcapmnththcsthpttx", "to_table": "ketquahoctapththcsthpttx",  "type": "1-n", "label": "co ket qua"},
+    {"from_table": "thongtinhocsinhcapmnththcsthpttx", "to_table": "thongtinsohocbasotieuhoc",  "type": "1-n", "label": "co hoc ba TH"},
+    {"from_table": "thongtinhocsinhcapmnththcsthpttx", "to_table": "thongtinsohocbasothcsthpt", "type": "1-n", "label": "co hoc ba THCS/THPT"},
+
+    {"from_table": "thongtindoingucanbocsgdcapmamnonththcsthpttx", "to_table": "thongtinkhenthuonggiaoviencapmnththcsthpttx",      "type": "1-n", "label": "duoc khen thuong"},
+    {"from_table": "thongtindoingucanbocsgdcapmamnonththcsthpttx", "to_table": "thongtinkyluatgiaoviencapmnththcsthpttx",         "type": "1-n", "label": "bi ky luat"},
+    {"from_table": "thongtindoingucanbocsgdcapmamnonththcsthpttx", "to_table": "quatrinhdaotaoboiduonggiaoviencapmnththcsthpttx",  "type": "1-n", "label": "duoc dao tao BD"},
+
+    {"from_table": "cosogiaoducdaihoc", "to_table": "thongtincocautochuc",               "type": "1-n", "label": "co don vi"},
+    {"from_table": "cosogiaoducdaihoc", "to_table": "thongtintoanha",                     "type": "1-n", "label": "co toa nha"},
+    {"from_table": "cosogiaoducdaihoc", "to_table": "csvcvatrangthietbidatdai",           "type": "1-n", "label": "co CSVC"},
+    {"from_table": "cosogiaoducdaihoc", "to_table": "phonghocgiangduongvahoitruong",      "type": "1-n", "label": "co phong hoc"},
+    {"from_table": "cosogiaoducdaihoc", "to_table": "DanhSachNganhDaoTao",                "type": "1-n", "label": "mo nganh"},
+    {"from_table": "cosogiaoducdaihoc", "to_table": "ChuongTrinhDaoTao",                  "type": "1-n", "label": "co CTDT"},
+    {"from_table": "cosogiaoducdaihoc", "to_table": "ttchunghocvien",                     "type": "1-n", "label": "co hoc vien"},
+    {"from_table": "cosogiaoducdaihoc", "to_table": "ThongTinCanBoGiangVien",             "type": "1-n", "label": "co CBGV"},
+
+    {"from_table": "DanhSachNganhDaoTao", "to_table": "ChuongTrinhDaoTao", "type": "1-n", "label": "gom CTDT"},
+
+    {"from_table": "ttchunghocvien", "to_table": "thongtinhoctapsvdh", "type": "1-n", "label": "co ho so hoc tap"},
+    {"from_table": "ttchunghocvien", "to_table": "VanBangChungChi",    "type": "1-n", "label": "duoc cap VB/CC"},
+    {"from_table": "ttchunghocvien", "to_table": "KhenThuong",         "type": "1-n", "label": "duoc khen"},
+    {"from_table": "ttchunghocvien", "to_table": "KyLuat",             "type": "1-n", "label": "bi ky luat"},
+
+    {"from_table": "ThongTinCanBoGiangVien", "to_table": "PhongBanDonViCongTac",                       "type": "1-n", "label": "thuoc don vi"},
+    {"from_table": "ThongTinCanBoGiangVien", "to_table": "QuaTrinhCongTacCuaCanBoGiangVien",           "type": "1-n", "label": "co qt cong tac"},
+    {"from_table": "ThongTinCanBoGiangVien", "to_table": "QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien",    "type": "1-n", "label": "co qt dao tao"},
+    {"from_table": "ThongTinCanBoGiangVien", "to_table": "KhenThuong",                                 "type": "1-n", "label": "duoc khen"},
+    {"from_table": "ThongTinCanBoGiangVien", "to_table": "KyLuat",                                     "type": "1-n", "label": "bi ky luat"}
+  ],
+
+  "domains": [
+    {"name": "CSGD Pho thong",      "fill_color": "#dae8fc", "stroke_color": "#6c8ebf"},
+    {"name": "Lop hoc PT",          "fill_color": "#d5e8d4", "stroke_color": "#82b366"},
+    {"name": "Hoc sinh & Ket qua",  "fill_color": "#ffe6cc", "stroke_color": "#d79b00"},
+    {"name": "Giao vien PT",        "fill_color": "#e1d5e7", "stroke_color": "#9673a6"},
+    {"name": "CSGD Dai hoc",        "fill_color": "#b0e3e6", "stroke_color": "#0e8088"},
+    {"name": "Chuong trinh DT",     "fill_color": "#fff2cc", "stroke_color": "#d6b656"},
+    {"name": "Hoc vien & Van bang", "fill_color": "#f8cecc", "stroke_color": "#b85450"},
+    {"name": "Can bo giang vien",   "fill_color": "#d0cee2", "stroke_color": "#56517e"}
+  ]
+}

@@ -1,0 +1,5 @@
+.env
+.venv/
+__pycache__/
+cdm_output/
+_cdm_upload_temp.xlsx
