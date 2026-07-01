@@ -1,0 +1,399 @@
+erDiagram
+  Thongtindiemtruongchinhcapmnththcsthpt {
+    boolean CoChatLuongToiThieu
+    boolean CoChuongTrinhGiaoDucGioiTinh
+    boolean CoChuongTrinhGiaoDucVeSinhDoiTay
+    boolean CoCongTrinhVeSinhTheoGioiTinh
+    boolean CoDay2BuoiNgay
+    boolean CoDayNghePhoThong
+    boolean CoDienLuoi
+    boolean CoHaTangTiepCanHocSinhKhuyetTat
+    boolean CoHocSinhBanTru
+    boolean CoHocSinhKhuyetTat
+  }
+  Thongtindiemtruongcapmnththcsthpttx {
+    varchar diachi_diachichitiet
+    double dientich
+    double kcdentruongchinh
+    varchar madiemtruong
+    varchar manhomcaphoc
+    varchar matruong
+    varchar phuongtiendilai
+    varchar sodienthoai
+    varchar tendiemtruong
+    varchar diachi_mahuyen FK
+  }
+  Lopmamnon {
+    boolean capnhatlopghep
+    boolean coctcsgd
+    boolean coctgdmnmoi
+    boolean coday2buoingay
+    boolean cotrekhuyettat
+    boolean ghep2tuoi
+    boolean ghep3tuoi
+    boolean ghep4tuoi
+    boolean lopbantru
+    boolean lopghep
+  }
+  Thongtinhocsinhcapmnththcsthpttx {
+    varchar benhbamsinh
+    varchar benhcoixuong
+    varchar benhcotsong
+    varchar benhvemat
+    boolean bietboi
+    double cannang
+    boolean chadantoc
+    double chieucao
+    varchar chisobmi
+    boolean cocapgao
+  }
+  Thongtindoingucanbocsgdcapmamnonththcsthpttx {
+    varchar cochuyentrachdoandoi
+    varchar codangvien
+    varchar coday1buoi
+    varchar coday2buoi
+    varchar codaylopkhuyettat
+    varchar codoanvien
+    varchar coquantuyen
+    varchar cotaphuankynangsong
+    varchar danhhieuptcaonhat
+    varchar email
+  }
+  Thongtinkhenthuonggiaoviencapmnththcsthpttx {
+    varchar capkhenthuong
+    varchar magiaovien
+    varchar matruong
+    varchar nam
+    date ngaykhenthuong
+    varchar noidungkhenthuong
+    varchar soquyetdinh
+    varchar makhenthuonggv FK
+    varchar maloaikhenthuong FK
+    varchar manhomcaphoc FK
+  }
+  Thongtinkyluatgiaoviencapmnththcsthpttx {
+    varchar lydo
+    varchar magiaovien
+    varchar matruong
+    date ngaykyluat
+    varchar soquyetdinh
+    varchar capkyluat FK
+    varchar loaikyluat FK
+    varchar makyluatgv FK
+    varchar manhomcaphoc FK
+    varchar keythongtinkyluatgiaoviencapmnththcsthpttx PK
+  }
+  Quatrinhdaotaoboiduonggiaoviencapmnththcsthpttx {
+    varchar chuyennganh
+    varchar hinhthucdaotao
+    varchar magiaovien
+    varchar manhomchuyennganh
+    varchar matruong
+    varchar tentruong
+    date thoigiandaotao_denngay
+    date thoigiandaotao_tungay
+    varchar vanbangchungchi_ma
+    varchar vanbangchungchi_ten
+  }
+  Ketquahoctapththcsthpttx {
+    varchar coduxettotnghiep
+    varchar colenlop
+    varchar corenluyenlai
+    double diemtongket
+    varchar hocky
+    varchar mahocsinh
+    varchar makhoi
+    varchar malop
+    varchar matruong
+    varchar nhanxet
+  }
+  Thongtinlophoctieuhoc {
+    boolean cocapnhatlopghep
+    boolean cocohocsinhhocnghe
+    boolean codaidienchamehslop
+    boolean codaidienchamehstruong
+    varchar coday2buoingay
+    boolean coduthietbihoctoan
+    boolean coduthietbihoctv
+    boolean cohoc5buoituan
+    boolean cohoc6den8buoituan
+    boolean cohoc9den10buoituan
+  }
+  Cosovatchatphonghoctieuhoc {
+    double dientich
+    double dientichcap4
+    double dientichduoicap4
+    double dientichtrencap4
+    varchar mabaocao
+    varchar madiemtruong
+    varchar matruong
+    varchar noidungtieuchi
+    int soluong
+    int soluongcap4
+  }
+  Thongtinlophocthcsthpt {
+    boolean colopchuyen
+    boolean comacapnhatlopghep
+    boolean comadaidienchamehslop
+    boolean comadaidienchamehstruong
+    boolean comaday2buoingay
+    boolean comahoc5buoituan
+    boolean comahocsinhhocnghe
+    boolean comahskhuyettat
+    boolean comalopbantru
+    boolean comalopghep
+  }
+  Cosogiaoducthuongxuyengiaoducnghenghiepgiaoducthuongxuyenvacactr {
+    varchar mavungkhokhan
+    varchar keycosogiaoducthuongxuyengiaoducnghenghiepgiaoducthuongxuyenvaca FK
+  }
+  Decimal_20 {
+    varchar x
+  }
+  Thongtinlophocgdtx {
+    boolean codaidienchamehslop
+    boolean codaidienchamehstruong
+    boolean colopcohskhuyettat
+    varchar magiaoviencn
+    varchar malop
+    varchar matrungtam
+    varchar tenlop
+    varchar hinhthuchoctap FK
+    varchar makhoi FK
+    varchar makieulop FK
+  }
+  Thongtinsohocbasotieuhoc {
+    varchar chucvugiamhieu
+    boolean cokhuyettatkhongdanhgia
+    boolean dahthanhctrinhlophoc
+    boolean dahthanhctrinhtieuhoc
+    varchar diadanhphathanh
+    varchar doituongchinhsach
+    boolean duoclenlop
+    varchar gioitinh
+    varchar hotencha
+    varchar hotenme
+  }
+  Decimal_18_4 {
+    varchar x
+    varchar x_2
+  }
+  Thongtinsohocbasothcsthpt {
+    varchar canam
+    varchar chucvugiamhieu
+    boolean cokhuyettatkhongdanhgia
+    varchar diadanhphathanh
+    varchar doituongchinhsach
+    boolean duoclenlop
+    varchar gioitinh
+    varchar hocky1
+    varchar hocky2
+    varchar hotencha
+  }
+  Higher_Education_Institution {
+    varchar coquanqltructiep
+    boolean daotaodubidaihoc
+    boolean daotaogiaovientrinhdocaodang
+    boolean daotaogiaovientrinhdotrungcap
+    boolean daotaotheotinchi
+    boolean daotaotrinhdodaihoc
+    boolean daotaotrinhdothacsi
+    boolean daotaotrinhdotiensi
+    varchar diachi_diachichitiet
+    varchar email_thongtinlienhe
+  }
+  Organization_Unit {
+    varchar loaiphongban
+    varchar maddtc
+    varchar maphongban
+    varchar maphongbancha
+    date quyetdinhthanhlap_ngayqd
+    varchar quyetdinhthanhlap_soqd
+    varchar tenphongban
+    varchar trangthaihdtc
+    varchar macosodaotao FK
+    varchar keythongtincocautochuc PK
+  }
+  Building {
+    varchar diachichitiet
+    double dientichxaydung
+    varchar hinhthucsohuu
+    varchar matoanha
+    int nambdsudung
+    date ngaychuyentrangthai
+    varchar phuongxa
+    int sotang
+    varchar tentoanha
+    varchar tinhtp
+  }
+  Land___Facility_Asset {
+    varchar diachichitiet
+    double dientichdasudung
+    float dientichdat
+    varchar hinhthucsohuu
+    varchar magcn
+    varchar minhchungquyensohuu
+    varchar mucdichsudung
+    int nambdsudung
+    date ngaychuyentrangthai
+    varchar phuongxa
+  }
+  Teaching_Room___Hall {
+    int chongoi
+    varchar diachichitiet
+    double dientich
+    varchar hinhthucsohuu
+    varchar loaidean
+    varchar loaiphonghoc
+    varchar maphonghocgdht
+    int namsudung
+    date ngaychuyentrangthai
+    varchar phanloai
+  }
+  Learner {
+    varchar email
+    varchar hotencha
+    varchar hotenme
+    varchar hotennguoigiamho
+    varchar loaikhuyettat
+    varchar macosodaotao
+    varchar mahocvien
+    varchar masobhxh
+    varchar ngayvaodang
+    varchar ngayvaodangchinhthuc
+  }
+  Postgraduate_Study_Record {
+    boolean bangtotnghieplienthong
+    varchar chuongtrinhdaotao
+    varchar coquanqd
+    varchar coquanqd_2
+    varchar coquanqd_3
+    varchar coquanqd_4
+    boolean dangonoitru
+    varchar daotaoden
+    varchar daotaotu
+    varchar doituongdauvao
+  }
+  Credential___Certificate {
+    varchar chucvu
+    varchar donvicap
+    varchar hinhthucdaotao
+    varchar hoidongthi
+    varchar hovaten
+    varchar khoathi
+    varchar madinhdanhvbcc
+    varchar mahocvien
+    varchar matruong
+    varchar namsinh
+  }
+  Reward {
+    varchar doituong
+    int namkhenthuong
+    varchar noidungkhenthuong
+    date quyetdinhkhenthuong_ngayqd
+    varchar quyetdinhkhenthuong_soqd
+    varchar thanhtichkhenthuong
+    varchar capkhenthuong FK
+    varchar hinhthuckhenthuong FK
+    varchar idthongtinhoctap FK
+    varchar loaikhenthuong FK
+  }
+  Discipline {
+    varchar capkyluat
+    date denngay
+    varchar doituong
+    varchar hanhvikyluat
+    varchar lydokyluat
+    varchar macosodaotao
+    varchar maloaikyluat
+    int namkyluat
+    varchar quyetdinhkyluat_capquyetdinh
+    date quyetdinhkyluat_ngayqd
+  }
+  Staff___Lecturer {
+    boolean bacsiduocsicki
+    boolean bacsiduocsickii
+    boolean ccsuphamgiangvien
+    boolean cholamviecrieng
+    varchar chuyenmondaotao
+    varchar cqcongtac
+    varchar email
+    boolean lacongchuc
+    boolean lavienchuc
+    varchar macanbo
+  }
+  Work_Unit_Assignment {
+    date denngay
+    boolean donvichinh
+    boolean donvigiangday
+    date ngayqd
+    varchar soqd
+    date tungay
+    varchar chucvucongtac FK
+    varchar hinhthucbonhiem FK
+    varchar macosodaotao FK
+    varchar maphongban FK
+  }
+  Teaching___Work_History {
+    varchar donvithinhgiang
+    boolean nganhchinh
+    varchar macosodaotao FK
+    varchar manganhgiangday FK
+    varchar trinhdogiangday FK
+    varchar keyquatrinhcongtaccuacanbogiangvien PK
+    varchar hovaten
+    int namsinh
+    date ngaythangnamsinh
+    varchar sodinhdanh
+  }
+  Staff_Education___Training_History {
+    varchar cosodaotao
+    int namtn
+    varchar quocgiadaotao
+    date thoigianbddaotao
+    date thoigianktdaotao
+    varchar loaihinhdaotao FK
+    varchar macosodaotao FK
+    varchar nganhdaotao FK
+    varchar trinhdodaotao FK
+    varchar keyquatrinhdaotaoboiduongcuacanbogiangvien PK
+  }
+  Training_Major {
+    varchar coquanbanhanh
+    boolean hinhthucdaotaocn
+    int nambddaotao
+    int namdtgannhat
+    varchar nguoiky
+    date qddoitennganh_ngayqd
+    varchar qddoitennganh_spqd
+    date qdmonganh_ngayqd
+    varchar qdmonganh_soqd
+    varchar quyetdinhtuchu
+  }
+  Training_Program {
+    varchar chuandaura
+    varchar chuandaurangoaingu
+    varchar chuandauratinhoc
+    varchar diachichitiet
+    varchar donvithuchien
+    varchar dsloaiccchapthuan_loaiccchapthuan
+    double hocphinn
+    double hocphivn
+    int namtuyensinh
+    date ngaybanhanhdaura
+  }
+  Higher_Education_Institution ||--o{ Organization_Unit : relates_to
+  Higher_Education_Institution ||--o{ Building : relates_to
+  Higher_Education_Institution ||--o{ Land___Facility_Asset : relates_to
+  Higher_Education_Institution ||--o{ Teaching_Room___Hall : relates_to
+  Higher_Education_Institution ||--o{ Reward : relates_to
+  Higher_Education_Institution ||--o{ Staff___Lecturer : relates_to
+  Higher_Education_Institution ||--o{ Work_Unit_Assignment : relates_to
+  Higher_Education_Institution ||--o{ Teaching___Work_History : relates_to
+  Higher_Education_Institution ||--o{ Staff_Education___Training_History : relates_to
+  Higher_Education_Institution ||--o{ Training_Major : relates_to
+  Higher_Education_Institution ||--o{ Training_Program : relates_to
+  Higher_Education_Institution ||--o{ Learner : relates_to
+  Learner ||--o{ Postgraduate_Study_Record : relates_to
+  Learner ||--o{ Credential___Certificate : relates_to
+  Higher_Education_Institution ||--o{ Discipline : relates_to

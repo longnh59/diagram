@@ -1,0 +1,73 @@
+# Agent 4: Relationship Simplifier
+
+## Conceptual Relationships
+- `thongtinhocsinhcapmnththcsthpttx_nguoivn.keythongtinhocsinhcapmnththcsthpttx` -> `thongtinhocsinhcapmnththcsthpttx.keythongtinhocsinhcapmnththcsthpttx` (foreign-key).
+- `thongtinhocsinhcapmnththcsthpttx_nguoivn_giaytodinhdanhcn.keythongtinhocsinhcapmnththcsthpttx_nguoivn` -> `thongtinhocsinhcapmnththcsthpttx_nguoivn.keythongtinhocsinhcapmnththcsthpttx_nguoivn` (foreign-key).
+- `thongtinhocsinhcapmnththcsthpttx_congdannuocngoai.keythongtinhocsinhcapmnththcsthpttx` -> `thongtinhocsinhcapmnththcsthpttx.keythongtinhocsinhcapmnththcsthpttx` (foreign-key).
+- `thongtinhocsinhcapmnththcsthpttx_congdannuocngoai_giaytodinhdanh.keythongtinhocsinhcapmnththcsthpttx_congdannuocngoai` -> `thongtinhocsinhcapmnththcsthpttx_congdannuocngoai.keythongtinhocsinhcapmnththcsthpttx_congdannuocngoai` (foreign-key).
+- `thongtinhocsinhcapmnththcsthpttx_thongtincha.keythongtinhocsinhcapmnththcsthpttx` -> `thongtinhocsinhcapmnththcsthpttx.keythongtinhocsinhcapmnththcsthpttx` (foreign-key).
+- `thongtinhocsinhcapmnththcsthpttx_thongtinme.keythongtinhocsinhcapmnththcsthpttx` -> `thongtinhocsinhcapmnththcsthpttx.keythongtinhocsinhcapmnththcsthpttx` (foreign-key).
+- `thongtinhocsinhcapmnththcsthpttx_nguoidodau.keythongtinhocsinhcapmnththcsthpttx` -> `thongtinhocsinhcapmnththcsthpttx.keythongtinhocsinhcapmnththcsthpttx` (foreign-key).
+- `thongtinhocsinhcapmnththcsthpttx_khenthuong.keythongtinhocsinhcapmnththcsthpttx` -> `thongtinhocsinhcapmnththcsthpttx.keythongtinhocsinhcapmnththcsthpttx` (foreign-key).
+- `thongtindoingucanbocsgdcapmamnonththcsthpttx_nguoivn.keythongtindoingucanbocsgdcapmamnonththcsthpttx` -> `thongtindoingucanbocsgdcapmamnonththcsthpttx.keythongtindoingucanbocsgdcapmamnonththcsthpttx` (foreign-key).
+- `thongtindoingucanbocsgdcapmamnonththcsthpttx_congdannuocngoai.keythongtindoingucanbocsgdcapmamnonththcsthpttx` -> `thongtindoingucanbocsgdcapmamnonththcsthpttx.keythongtindoingucanbocsgdcapmamnonththcsthpttx` (foreign-key).
+- `thongtindoingucanbocsgdcapmamnonththcsthpttx_monday.keythongtindoingucanbocsgdcapmamnonththcsthpttx` -> `thongtindoingucanbocsgdcapmamnonththcsthpttx.keythongtindoingucanbocsgdcapmamnonththcsthpttx` (foreign-key).
+- `thongtindoingucanbocsgdcapmamnonththcsthpttx_monkiemnhiem.keythongtindoingucanbocsgdcapmamnonththcsthpttx` -> `thongtindoingucanbocsgdcapmamnonththcsthpttx.keythongtindoingucanbocsgdcapmamnonththcsthpttx` (foreign-key).
+- `thongtindoingucanbocsgdcapmamnonththcsthpttx_ngoaingu.keythongtindoingucanbocsgdcapmamnonththcsthpttx` -> `thongtindoingucanbocsgdcapmamnonththcsthpttx.keythongtindoingucanbocsgdcapmamnonththcsthpttx` (foreign-key).
+- `ketquahoctapththcsthpttx_nguoivn.keyketquahoctapththcsthpttx` -> `ketquahoctapththcsthpttx.keyketquahoctapththcsthpttx` (foreign-key).
+- `ketquahoctapththcsthpttx_cogndannuocngoai.keyketquahoctapththcsthpttx` -> `ketquahoctapththcsthpttx.keyketquahoctapththcsthpttx` (foreign-key).
+- `ketquahoctapththcsthpttx_khenthuong.keyketquahoctapththcsthpttx` -> `ketquahoctapththcsthpttx.keyketquahoctapththcsthpttx` (foreign-key).
+- `ketquahoctapththcsthpttx_kyluat.keyketquahoctapththcsthpttx` -> `ketquahoctapththcsthpttx.keyketquahoctapththcsthpttx` (foreign-key).
+- `ketquahoctapththcsthpttx_diemmon.keyketquahoctapththcsthpttx` -> `ketquahoctapththcsthpttx.keyketquahoctapththcsthpttx` (foreign-key).
+- `thongtinlophocgdtx_monhoc.keythongtinlophocgdtx` -> `thongtinlophocgdtx.keythongtinlophocgdtx` (foreign-key).
+- `thongtinsohocbasotieuhoc_quatrinhhoctap.keythongtinsohocbasotieuhoc` -> `thongtinsohocbasotieuhoc.keythongtinsohocbasotieuhoc` (foreign-key).
+- `thongtinsohocbasotieuhoc_dsbangdiem.keythongtinsohocbasotieuhoc` -> `thongtinsohocbasotieuhoc.keythongtinsohocbasotieuhoc` (foreign-key).
+- `thongtinsohocbasothcsthpt_quatrinhhoctap.keythongtinsohocbasothcsthpt` -> `thongtinsohocbasothcsthpt.keythongtinsohocbasothcsthpt` (foreign-key).
+- `thongtinsohocbasothcsthpt_chungchi.keythongtinsohocbasothcsthpt` -> `thongtinsohocbasothcsthpt.keythongtinsohocbasothcsthpt` (foreign-key).
+- `thongtinsohocbasothcsthpt_bangdiem.keythongtinsohocbasothcsthpt` -> `thongtinsohocbasothcsthpt.keythongtinsohocbasothcsthpt` (foreign-key).
+- `thongtincocautochuc.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `thongtintoanha.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `csvcvatrangthietbidatdai.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `csvcvatrangthietbidatdai_doituongsohuu_nguoivn.keycsvcvatrangthietbi` -> `csvcvatrangthietbidatdai.keycsvcvatrangthietbi` (foreign-key).
+- `csvcvatrangthietbidatdai_doituongsohuu_dinhdanhtochuc.keycsvcvatrangthietbi` -> `csvcvatrangthietbidatdai.keycsvcvatrangthietbi` (foreign-key).
+- `phonghocgiangduongvahoitruong.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `ttchunghocvien_nguoivn.keyttchunghocvien` -> `ttchunghocvien.keyttchunghocvien` (foreign-key).
+- `ttchunghocvien_nguoivn_giaytodinhdanhcn.keyttchunghocviennguoivn` -> `ttchunghocvien_nguoivn.keyttchunghocviennguoivn` (foreign-key).
+- `ttchunghocvien_congdannuocngoai.keyttchunghocvien` -> `ttchunghocvien.keyttchunghocvien` (foreign-key).
+- `ttchunghocvien_congdannuocngoai_giaytodinhdanhnn.keyttchunghocviencongdannuocngoai` -> `ttchunghocvien_congdannuocngoai.keyttchunghocviencongdannuocngoai` (foreign-key).
+- `thongtinhoctapsvdh_nguoivn.keythongtinhoctapsvdh` -> `thongtinhoctapsvdh.keythongtinhoctapsvdh` (foreign-key).
+- `thongtinhoctapsvdh_congdannuocngoai.keythongtinhoctapsvdh` -> `thongtinhoctapsvdh.keythongtinhoctapsvdh` (foreign-key).
+- `ThongTinHocTapSVDH_QuyetDinhThoiHocBaoLuu.keythongtinhoctapsvdh` -> `thongtinhoctapsvdh.keythongtinhoctapsvdh` (foreign-key).
+- `VanBangChungChi_ThongTinHieuChinh.keyvanbangchungchi` -> `VanBangChungChi.keyvanbangchungchi` (foreign-key).
+- `KhenThuong.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `KhenThuong_NguoiVN.keykhenthuong` -> `KhenThuong.keykhenthuong` (foreign-key).
+- `KhenThuong_CongDanNuocNgoai.keykhenthuong` -> `KhenThuong.keykhenthuong` (foreign-key).
+- `KyLuat_NguoiVN.keykyluat` -> `KyLuat.keykyluat` (foreign-key).
+- `KyLuat_CongDanNuocNgoai.keykyluat` -> `KyLuat.keykyluat` (foreign-key).
+- `ThongTinCanBoGiangVien.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `ThongTinCanBoGiangVien_NguoiVN.keythongtincanbogiangvien` -> `ThongTinCanBoGiangVien.keythongtincanbogiangvien` (foreign-key).
+- `ThongTinCanBoGiangVien_NguoiVN_GiayToDinhDanhCN.keythongtincanbogiangvien` -> `ThongTinCanBoGiangVien.keythongtincanbogiangvien` (foreign-key).
+- `ThongTinCanBoGiangVien_CongDanNuocNgoai.keythongtincanbogiangvien` -> `ThongTinCanBoGiangVien.keythongtincanbogiangvien` (foreign-key).
+- `ThongTinCanBoGiangVien_CongDanNuocNgoai_GiayToDinhDanhNN.keythongtincanbogiangvien` -> `ThongTinCanBoGiangVien.keythongtincanbogiangvien` (foreign-key).
+- `PhongBanDonViCongTac.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `PhongBanDonViCongTac_NguoiVN.keyphongbandonvicongtac` -> `PhongBanDonViCongTac.keyphongbandonvicongtac` (foreign-key).
+- `PhongBanDonViCongTac_CongDanNuocNgoai.keyphongbandonvicongtac` -> `PhongBanDonViCongTac.keyphongbandonvicongtac` (foreign-key).
+- `QuaTrinhCongTacCuaCanBoGiangVien.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `QuaTrinhCongTacCuaCanBoGiangVien_NguoiVN.keyquatrinhcongtaccuacanbogiangvien` -> `QuaTrinhCongTacCuaCanBoGiangVien.keyquatrinhcongtaccuacanbogiangvien` (foreign-key).
+- `QuaTrinhCongTacCuaCanBoGiangVien_CongDanNuocNgoai.keyquatrinhcongtaccuacanbogiangvien` -> `QuaTrinhCongTacCuaCanBoGiangVien.keyquatrinhcongtaccuacanbogiangvien` (foreign-key).
+- `QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien_NguoiVN.keyquatrinhdaotaoboiduongcuacanbogiangvien` -> `QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien.keyquatrinhdaotaoboiduongcuacanbogiangvien` (foreign-key).
+- `QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien_CongDanNuocNgoai.keyquatrinhdaotaoboiduongcuacanbogiangvien` -> `QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien.keyquatrinhdaotaoboiduongcuacanbogiangvien` (foreign-key).
+- `DanhSachNganhDaoTao.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `ChuongTrinhDaoTao.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (foreign-key).
+- `ttchunghocvien.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (inferred-business-key). Học viên thuộc cơ sở đào tạo — macosodaotao là business key liên kết.
+- `thongtinhoctapsvdh.mahocvien` -> `ttchunghocvien.mahocvien` (inferred-business-key). Hồ sơ học tập gắn với học viên qua mahocvien.
+- `VanBangChungChi.mahocvien` -> `ttchunghocvien.mahocvien` (inferred-business-key). Văn bằng/chứng chỉ gắn với học viên qua mahocvien.
+- `KyLuat.macosodaotao` -> `cosogiaoducdaihoc.macosodaotao` (inferred-business-key). Kỷ luật liên kết với cơ sở đào tạo ban hành.
+
+## Simplification Rules
+- Treat `key*` joins from subtype tables to parent tables as implementation nesting unless the child is a repeated business fact.
+- Collapse `_nguoivn` and `_congdannuocngoai` into the parent entity with citizenship/person-type attributes.
+- Collapse `_giaytodinhdanh*` into repeatable `IdentityDocument` components.
+- Keep decisions, corrections, ownership, reward, discipline, study, work, and training history as business facts.
+- Keep `macosodaotao` as the main Institution relationship.

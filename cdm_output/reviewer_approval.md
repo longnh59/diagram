@@ -1,0 +1,97 @@
+# Agent 7: Reviewer / Human Approval
+
+## Decisions To Approve
+- Approve lowercase table preference and removal of mixed-case duplicates.
+- Approve collapsing VN/foreign person detail tables into one conceptual person/profile component.
+- Approve inferred business-key relationships such as `mahocvien` and `macosodaotao`.
+- Decide whether entity names should be English business names or Vietnamese official terms.
+
+## Missing Reference Data
+- `dantoc`
+- `gioitinh`
+- `hinhthucbonhiem`
+- `hinhthucdaotao`
+- `hinhthucdaotaocn`
+- `hinhthuchoctap`
+- `hinhthuckhenthuong`
+- `hinhthucsohuu`
+- `hinhthucthanhlap`
+- `loaichungchi`
+- `loaichuongtrinhdaotao`
+- `loaichuongtrinhlkdaotao`
+- `loaidean`
+- `loaigiayto`
+- `loaigiaytoxnc`
+- `loaigvgdvanhoa`
+- `loaihinhcsdt`
+- `loaihinhdaotao`
+- `loaihinhtruong`
+- `loaihocvien`
+- `loaikhenthuong`
+- `loaikhuyettat`
+- `loaikyluat`
+- `loaiphongban`
+- `loaiphonghoc`
+- `loaitotnghiep`
+- `loaitruong`
+- `mabaocao`
+- `maboiduongthuongxuyen`
+- `macanbo`
+- `macaphoc`
+- `machatluonggiaoduc`
+- `machuongtrinhdaotao`
+- `madanhgiavienchuc`
+- `madanhhieu`
+- `madanhmucngoaingu1`
+- `madanhmucngoaingu2`
+- `maddtc`
+- `madiemtruong`
+- `madienchinhsach`
+- `madinhdanhhocba`
+- `madinhdanhvbcc`
+- `maduan`
+- `magcn`
+- `magiaovien`
+- `magiaoviencn`
+- `magiaoviengioi`
+- `mahanhkiem`
+- `mahechuyen`
+- `mahinhthucdaotao`
+- `mahinhthuchopdong`
+- `mahocbantru`
+- `mahocluc`
+- `mahocsinh`
+- `maketquachuannghenghiep`
+- `makhenthuong`
+- `makhenthuonggv`
+- `makhoi`
+- `makhungnlngoaingu`
+- `makhuvuc`
+- `makieulop`
+- `makyluatgv`
+- `maloaicanbo`
+- `maloaihinhtruong`
+- `maloaikhenthuong`
+- `maloaikhuyettat`
+- `maloaikyluat`
+- `maloaitruong`
+- `malop`
+- `malopdaotaoboiduong`
+- `malopghep`
+- `malophuongnghiep`
+- `malophuongnghiepdaynghe`
+- `malydothoihoc`
+- `mamonday`
+- `mamonhoc`
+- `mamonkiemnhiem`
+- `mangach`
+- `manganh`
+- `manganhgiangday`
+
+## Sign-off
+- [ ] Metadata extraction accepted
+- [ ] Table classification accepted
+- [ ] Business entity grouping accepted
+- [ ] Relationship simplification accepted
+- [ ] Subject area map accepted
+- [ ] CDM / Glossary / ERD accepted

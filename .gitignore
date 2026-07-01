@@ -1,5 +1,14 @@
+# Secret — KHONG BAO GIO commit (chua API key)
 .env
+
+# Moi truong Python — 62MB, khong portable, tai tao bang: python -m venv .venv && pip install ...
 .venv/
+
+# Cache Python
 __pycache__/
-cdm_output/
+
+# Cau hinh may ca nhan
+.claude/settings.local.json
+
+# File upload tam cua server
 _cdm_upload_temp.xlsx

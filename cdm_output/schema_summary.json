@@ -1,0 +1,2530 @@
+{
+  "source": "Book1.xlsx",
+  "n_base_entities": 32,
+  "n_child_entities": 27,
+  "n_physical_tables": 83,
+  "dropped_garbage": [
+    "decimal__20",
+    "decimal__18.4"
+  ],
+  "entities": [
+    {
+      "base_table": "thongtindiemtruongchinhcapmnththcsthpt",
+      "pk": [],
+      "codes": [
+        {
+          "name": "maddtc",
+          "type": "VARCHAR(35)",
+          "key": "",
+          "desc": "Mã định danh cho cơ sở giáo dục"
+        },
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường được sinh theo quy tắc: Mã sở + Mã Phường/Xã + STT tự tăng"
+        },
+        {
+          "name": "maduan",
+          "type": "VARCHAR(10)",
+          "key": "",
+          "desc": "Mã dự án theo danh mục của bộ ngành"
+        },
+        {
+          "name": "mavungkhokhan",
+          "type": "VARCHAR(5)",
+          "key": "",
+          "desc": "Mã vùng khó khăn theo quy định tại Quyết định số 4998/QĐBGDĐT"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tentruong",
+          "type": "VARCHAR(200)",
+          "key": "",
+          "desc": "Tên trường"
+        },
+        {
+          "name": "vitribando",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Vị trí bản đồ"
+        },
+        {
+          "name": "diachi_diachichitiet",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Địa chỉ chi tiết"
+        },
+        {
+          "name": "sodienthoai",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Số điện thoại"
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Email"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 60
+    },
+    {
+      "base_table": "thongtindiemtruongcapmnththcsthpttx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "manhomcaphoc",
+          "type": "VARCHAR(2)",
+          "key": "",
+          "desc": "Mã nhóm cấp học theo danh mục của bộ ngành"
+        },
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã điểm trường chính/mã trung tâm thường xuyên"
+        },
+        {
+          "name": "madiemtruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã điểm trường"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tendiemtruong",
+          "type": "VARCHAR(200)",
+          "key": "",
+          "desc": "Tên điểm trường"
+        },
+        {
+          "name": "sodienthoai",
+          "type": "VARCHAR(12)",
+          "key": "",
+          "desc": "Số điện thoại"
+        },
+        {
+          "name": "kcdentruongchinh",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Khoảng cách đến trường chính (km)"
+        },
+        {
+          "name": "phuongtiendilai",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Phương tiện có thể đi lại"
+        },
+        {
+          "name": "dientich",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Diện tích (m2)"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 18
+    },
+    {
+      "base_table": "lopmamnon",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường"
+        },
+        {
+          "name": "madiemtruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã điểm trường"
+        },
+        {
+          "name": "malop",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã lớp"
+        },
+        {
+          "name": "magiaoviencn",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên chủ nhiệm"
+        },
+        {
+          "name": "malopghep",
+          "type": "VARCHAR(15)",
+          "key": "",
+          "desc": "Mã lớp ghép"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tenlop",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Tên lớp"
+        },
+        {
+          "name": "coday2buoingay",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Có dạy 2 buổi/ngày"
+        },
+        {
+          "name": "ghep2tuoi",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là lớp ghép 2 tuổi"
+        },
+        {
+          "name": "ghep3tuoi",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là lớp ghép 3 tuổi"
+        },
+        {
+          "name": "ghep4tuoi",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là lớp ghép 4 tuổi"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 25
+    },
+    {
+      "base_table": "thongtinhocsinhcapmnththcsthpttx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường"
+        },
+        {
+          "name": "malop",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã lớp"
+        },
+        {
+          "name": "mahocsinh",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã học sinh"
+        },
+        {
+          "name": "mahocbantru",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã học bán trú theo danh mục của bộ ngành"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "chieucao",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Chiều cao"
+        },
+        {
+          "name": "cannang",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Cân nặng"
+        },
+        {
+          "name": "chisobmi",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Chỉ số (BMI)"
+        },
+        {
+          "name": "benhvemat",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Các bệnh về mắt"
+        },
+        {
+          "name": "benhbamsinh",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Các bệnh bẩm sinh"
+        }
+      ],
+      "merged_variants": [
+        "nguoivn",
+        "congdannuocngoai"
+      ],
+      "child_entities": [
+        {
+          "table": "thongtinhocsinhcapmnththcsthpttx_nguoivn_giaytodinhdanhcn",
+          "label": "giaytodinhdanhcn",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "sogiayto",
+              "type": "VARCHAR(30)",
+              "key": "",
+              "desc": "Số giấy tờ"
+            },
+            {
+              "name": "ngaycap",
+              "type": "DATE",
+              "key": "",
+              "desc": "Ngày cấp giấy tờ. Định dạng YYYY-MM-DD"
+            },
+            {
+              "name": "noicap",
+              "type": "VARCHAR(300)",
+              "key": "",
+              "desc": "Nơi cấp giấy tờ"
+            }
+          ],
+          "n_columns": 11
+        },
+        {
+          "table": "thongtinhocsinhcapmnththcsthpttx_congdannuocngoai_giaytodinhdanh",
+          "label": "giaytodinhdanh",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "sogiaytoxnc",
+              "type": "VARCHAR(50)",
+              "key": "",
+              "desc": "Số giấy tờ"
+            },
+            {
+              "name": "noicapgiaytoxnc",
+              "type": "VARCHAR(300)",
+              "key": "",
+              "desc": "Ngày cấp giấy tờ. Định dạng YYYY-MM-DD"
+            }
+          ],
+          "n_columns": 10
+        },
+        {
+          "table": "thongtinhocsinhcapmnththcsthpttx_thongtincha",
+          "label": "thongtincha",
+          "cardinality": "1-1",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "hovaten",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Tên cha"
+            },
+            {
+              "name": "sodinhdanh",
+              "type": "VARCHAR(12)",
+              "key": "",
+              "desc": "Số định danh của cha"
+            },
+            {
+              "name": "nghenghiep",
+              "type": "VARCHAR(100)",
+              "key": "",
+              "desc": "Nghề nghiệp cha"
+            },
+            {
+              "name": "namsinh",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Năm sinh cha. Định dạng YYYY"
+            }
+          ],
+          "n_columns": 11
+        },
+        {
+          "table": "thongtinhocsinhcapmnththcsthpttx_thongtinme",
+          "label": "thongtinme",
+          "cardinality": "1-1",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "hovaten",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Tên cha"
+            },
+            {
+              "name": "sodinhdanh",
+              "type": "VARCHAR(12)",
+              "key": "",
+              "desc": "Số định danh của mẹ"
+            },
+            {
+              "name": "nghenghiep",
+              "type": "VARCHAR(100)",
+              "key": "",
+              "desc": "Nghề nghiệp cha"
+            },
+            {
+              "name": "namsinh",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Năm sinh cha. Định dạng YYYY"
+            }
+          ],
+          "n_columns": 11
+        },
+        {
+          "table": "thongtinhocsinhcapmnththcsthpttx_nguoidodau",
+          "label": "nguoidodau",
+          "cardinality": "1-n",
+          "pk": [
+            {
+              "name": "thongtinhocsinhcapmnththcsthpttx_nguoidodau",
+              "type": "VARCHAR(32)",
+              "key": "PK",
+              "desc": "Key kỹ thuật, sử dụng để mapping nghiệp vụ hệ thống"
+            }
+          ],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "hovaten",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Tên cha"
+            },
+            {
+              "name": "sodinhdanh",
+              "type": "VARCHAR(12)",
+              "key": "",
+              "desc": "Số định danh của người đỡ đầu"
+            },
+            {
+              "name": "nghenghiep",
+              "type": "VARCHAR(250)",
+              "key": "",
+              "desc": "Nghề nghiệp cha"
+            },
+            {
+              "name": "namsinh",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Năm sinh cha. Định dạng YYYY"
+            }
+          ],
+          "n_columns": 11
+        },
+        {
+          "table": "thongtinhocsinhcapmnththcsthpttx_khenthuong",
+          "label": "khenthuong",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "noidung",
+              "type": "VARCHAR(255)",
+              "key": "",
+              "desc": "Nội dung khen thưởng"
+            },
+            {
+              "name": "monkhenthuong",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Môn khen thưởng"
+            }
+          ],
+          "n_columns": 10
+        }
+      ],
+      "n_columns": 53
+    },
+    {
+      "base_table": "thongtindoingucanbocsgdcapmamnonththcsthpttx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường"
+        },
+        {
+          "name": "magiaovien",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên"
+        },
+        {
+          "name": "matrangthailv",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trạng thái làm việc của cán bộ theo danh mục của bộ ngành"
+        },
+        {
+          "name": "masobhxh",
+          "type": "VARCHAR(15)",
+          "key": "",
+          "desc": "Mã sổ bảo hiểm xã hội"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sodienthoai",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Số điện thoại"
+        },
+        {
+          "name": "email",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Email"
+        },
+        {
+          "name": "codangvien",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Là đảng viên không"
+        },
+        {
+          "name": "codoanvien",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Là đoàn viên không"
+        },
+        {
+          "name": "ngaytuyendung",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày tuyển dụng. Định dạng YYYY-MM-DD"
+        }
+      ],
+      "merged_variants": [
+        "nguoivn",
+        "congdannuocngoai"
+      ],
+      "child_entities": [
+        {
+          "table": "thongtindoingucanbocsgdcapmamnonththcsthpttx_monday",
+          "label": "monday",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [],
+          "n_columns": 8
+        },
+        {
+          "table": "thongtindoingucanbocsgdcapmamnonththcsthpttx_monkiemnhiem",
+          "label": "monkiemnhiem",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [
+            {
+              "name": "mamonkiemnhiem",
+              "type": "VARCHAR(20)",
+              "key": "",
+              "desc": "Mã môn kiêm nhiệm theo danh mục của bộ ngành"
+            }
+          ],
+          "attrs": [],
+          "n_columns": 8
+        },
+        {
+          "table": "thongtindoingucanbocsgdcapmamnonththcsthpttx_ngoaingu",
+          "label": "ngoaingu",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "diemngoaingu",
+              "type": "DOUBLE",
+              "key": "",
+              "desc": "Điểm ngoại ngữ"
+            },
+            {
+              "name": "ngaycap",
+              "type": "DATE",
+              "key": "",
+              "desc": "Ngày cấp theo định dạng YYYY-MM-DD"
+            },
+            {
+              "name": "ghichu",
+              "type": "VARCHAR(200)",
+              "key": "",
+              "desc": "Ghi chú"
+            }
+          ],
+          "n_columns": 12
+        }
+      ],
+      "n_columns": 39
+    },
+    {
+      "base_table": "thongtinkhenthuonggiaoviencapmnththcsthpttx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường/Mã trung tâm. Tham chiếu đến dữ liệu Trường Tiểu học - THCS - THPT"
+        },
+        {
+          "name": "magiaovien",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên. Tham chiếu đến dữ liệu Đội ngũ cán bộ"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "noidungkhenthuong",
+          "type": "VARCHAR(250)",
+          "key": "",
+          "desc": "Nội dung khen thưởng giao viên"
+        },
+        {
+          "name": "capkhenthuong",
+          "type": "VARCHAR(100)",
+          "key": "",
+          "desc": "Cấp khen thưởng giáo viên theo danh mục của bộ ngành"
+        },
+        {
+          "name": "ngaykhenthuong",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày khen thưởng. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "soquyetdinh",
+          "type": "VARCHAR(100)",
+          "key": "",
+          "desc": "Số quyết định"
+        },
+        {
+          "name": "nam",
+          "type": "VARCHAR(4)",
+          "key": "",
+          "desc": "Năm quyết định. Định dạng YYYY"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 16
+    },
+    {
+      "base_table": "thongtinkyluatgiaoviencapmnththcsthpttx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường/Mã trung tâm. Tham chiếu đến dữ liệu Trường Tiểu học - THCS - THPT"
+        },
+        {
+          "name": "magiaovien",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên. Tham chiếu đến dữ liệu Đội ngũ cán bộ"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "lydo",
+          "type": "VARCHAR(100)",
+          "key": "",
+          "desc": "Lý do"
+        },
+        {
+          "name": "ngaykyluat",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày kỷ luật. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "soquyetdinh",
+          "type": "VARCHAR(100)",
+          "key": "",
+          "desc": "Số quyết định"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 15
+    },
+    {
+      "base_table": "quatrinhdaotaoboiduonggiaoviencapmnththcsthpttx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường. Tham chiếu đến dữ liệu Trường Tiểu học - THCS - THPT"
+        },
+        {
+          "name": "magiaovien",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên. Tham chiếu đến dữ liệu Đội ngũ cán bộ"
+        },
+        {
+          "name": "manhomchuyennganh",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã nhóm chuyên ngành theo danh mục của bộ ngành"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tentruong",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Tên trường"
+        },
+        {
+          "name": "hinhthucdaotao",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã hình thức đào tạo theo danh mục"
+        },
+        {
+          "name": "chuyennganh",
+          "type": "VARCHAR(100)",
+          "key": "",
+          "desc": "Chuyên ngành đào tạo"
+        },
+        {
+          "name": "thoigiandaotao_tungay",
+          "type": "DATE",
+          "key": "",
+          "desc": "Từ ngày tháng năm. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "thoigiandaotao_denngay",
+          "type": "DATE",
+          "key": "",
+          "desc": "Đến ngày tháng năm. Định dạng YYYY-MM-DD"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 17
+    },
+    {
+      "base_table": "ketquahoctapththcsthpttx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường. Tham chiếu đến dữ liệu Trường Tiểu học - THCS - THPT"
+        },
+        {
+          "name": "makhoi",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Tên trường"
+        },
+        {
+          "name": "malop",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã lớp"
+        },
+        {
+          "name": "mahocsinh",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã học sinh. Tham chiếu đến dữ liệu Học sinh Tiểu học - THCS - THPT"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "hocky",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Học kỳ"
+        },
+        {
+          "name": "diemtongket",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Điểm tổng kết"
+        },
+        {
+          "name": "songaynghi",
+          "type": "INT",
+          "key": "",
+          "desc": "Số ngày nghỉ"
+        },
+        {
+          "name": "nhanxet",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Nhận xét"
+        },
+        {
+          "name": "colenlop",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Được lên lớp"
+        }
+      ],
+      "merged_variants": [
+        "nguoivn",
+        "cogndannuocngoai"
+      ],
+      "child_entities": [
+        {
+          "table": "ketquahoctapththcsthpttx_khenthuong",
+          "label": "khenthuong",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "khenthuong",
+              "type": "VARCHAR(255)",
+              "key": "",
+              "desc": "Khen thưởng"
+            }
+          ],
+          "n_columns": 8
+        },
+        {
+          "table": "ketquahoctapththcsthpttx_kyluat",
+          "label": "kyluat",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "kyluat",
+              "type": "VARCHAR(255)",
+              "key": "",
+              "desc": "Thông tin Kỷ luật"
+            }
+          ],
+          "n_columns": 8
+        },
+        {
+          "table": "ketquahoctapththcsthpttx_diemmon",
+          "label": "diemmon",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "diem",
+              "type": "DOUBLE",
+              "key": "",
+              "desc": "Điểm"
+            }
+          ],
+          "n_columns": 9
+        }
+      ],
+      "n_columns": 22
+    },
+    {
+      "base_table": "thongtinlophoctieuhoc",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường. Tham chiếu đến dữ liệu Trường Tiểu học - THCS - THPT"
+        },
+        {
+          "name": "malop",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã lớp"
+        },
+        {
+          "name": "madiemtruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã điểm trường"
+        },
+        {
+          "name": "malopghep",
+          "type": "VARCHAR(15)",
+          "key": "",
+          "desc": "Mã lớp ghép"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tenlop",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Tên lớp"
+        },
+        {
+          "name": "giaoviencn",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên chủ nhiệm. Tham chiếu đến dữ liệu Đội ngũ cán bộ"
+        },
+        {
+          "name": "coday2buoingay",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Dạy 2 buổi / ngày"
+        },
+        {
+          "name": "colopghep",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Là lớp ghép"
+        },
+        {
+          "name": "cocapnhatlopghep",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Có cập nhật lớp ghép"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 32
+    },
+    {
+      "base_table": "cosovatchatphonghoctieuhoc",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường tiểu học. Tham chiếu đến dữ liệu Trường Tiểu học - THCS - THPT"
+        },
+        {
+          "name": "madiemtruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã điểm trường. Tham chiếu đến dữ liệu điểm trường"
+        },
+        {
+          "name": "mabaocao",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Mã báo cáo"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "noidungtieuchi",
+          "type": "VARCHAR(500)",
+          "key": "",
+          "desc": "Nội dung tiêu chí"
+        },
+        {
+          "name": "soluongtrencap4",
+          "type": "INT",
+          "key": "",
+          "desc": "Số lượng phòng học/công trình trên cấp 4"
+        },
+        {
+          "name": "dientichtrencap4",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Diện tích phòng học/công trình trên cấp 4"
+        },
+        {
+          "name": "soluongcap4",
+          "type": "INT",
+          "key": "",
+          "desc": "Số lượng phòng học/công trình cấp 4"
+        },
+        {
+          "name": "dientichcap4",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Diện tích phòng học/công trình cấp 4"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 18
+    },
+    {
+      "base_table": "thongtinlophocthcsthpt",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường. Tham chiếu đến dữ liệu Trường Tiểu học - THCS - THPT"
+        },
+        {
+          "name": "malop",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã lớp"
+        },
+        {
+          "name": "magiaoviencn",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên. Tham chiếu đến dữ liệu Đội ngũ cán bộ"
+        },
+        {
+          "name": "madiemtruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã điểm trường. Tham chiếu đến dữ liệu Danh sách điểm trường"
+        },
+        {
+          "name": "malopghep",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã lớp ghép"
+        },
+        {
+          "name": "masobuoihoctrentuan",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Mã số buổi học trên tuần theo danh mục của bộ ngành"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tenlop",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Tên lớp"
+        },
+        {
+          "name": "comaday2buoingay",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Dạy 2 buổi / ngày"
+        },
+        {
+          "name": "comalopghep",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là lớp ghép"
+        },
+        {
+          "name": "comacapnhatlopghep",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Có cập nhật lớp ghép"
+        },
+        {
+          "name": "comalopbantru",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là lớp bán trú"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [
+        {
+          "table": "thongtinlophocthcsthpt_monhoc",
+          "label": "monhoc",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [
+            {
+              "name": "magiaovien",
+              "type": "VARCHAR(15)",
+              "key": "",
+              "desc": "Mã giáo viên. Tham chiếu đến dữ liệu Đội ngũ cán bộ"
+            }
+          ],
+          "attrs": [
+            {
+              "name": "hocky",
+              "type": "INT",
+              "key": "",
+              "desc": "Học kỳ"
+            }
+          ],
+          "n_columns": 10
+        }
+      ],
+      "n_columns": 30
+    },
+    {
+      "base_table": "cosogiaoducthuongxuyengiaoducnghenghiepgiaoducthuongxuyenvacactr",
+      "pk": [],
+      "codes": [
+        {
+          "name": "mavungkhokhan",
+          "type": "VARCHAR(2)",
+          "key": "",
+          "desc": "Mã vùng khó khăn theo quy định tại Quyết định số 4998/QĐBGDĐT"
+        }
+      ],
+      "attrs": [],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 8
+    },
+    {
+      "base_table": "thongtinlophocgdtx",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matrungtam",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trung tâm. Tham chiếu đến dữ liệu Cơ sở giáo dục thường xuyên"
+        },
+        {
+          "name": "malop",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã lớp"
+        },
+        {
+          "name": "magiaoviencn",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã giáo viên chủ nhiệm. Tham chiếu đến dữ liệu Đội ngũ cán bộ"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tenlop",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Tên lớp"
+        },
+        {
+          "name": "codaidienchamehslop",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Có đại diện cha mẹ học sinh lớp"
+        },
+        {
+          "name": "codaidienchamehstruong",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Có đại diện cha mẹ học sinh trường"
+        },
+        {
+          "name": "colopcohskhuyettat",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Lớp có học sinh khuyết tật"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [
+        {
+          "table": "thongtinlophocgdtx_monhoc",
+          "label": "monhoc",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [
+            {
+              "name": "magiaovien",
+              "type": "VARCHAR(15)",
+              "key": "",
+              "desc": "Mã giáo viên "
+            }
+          ],
+          "attrs": [],
+          "n_columns": 9
+        }
+      ],
+      "n_columns": 19
+    },
+    {
+      "base_table": "thongtinsohocbasotieuhoc",
+      "pk": [],
+      "codes": [
+        {
+          "name": "madinhdanhhocba",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã định danh học bạ"
+        },
+        {
+          "name": "masogd",
+          "type": "VARCHAR(2)",
+          "key": "",
+          "desc": "Mã sở giáo dục theo danh mục của Bộ giáo dục"
+        },
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường theo danh mục của Bộ giáo dục"
+        },
+        {
+          "name": "macaphoc",
+          "type": "VARCHAR(2)",
+          "key": "",
+          "desc": "Mã cấp học. "
+        },
+        {
+          "name": "mahocsinh",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã học sinh"
+        },
+        {
+          "name": "makhoi",
+          "type": "VARCHAR(2)",
+          "key": "",
+          "desc": "Mã khối. "
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trangthaithongtinhocba",
+          "type": "VARCHAR(30)",
+          "key": "",
+          "desc": "Trạng thái học bạ"
+        },
+        {
+          "name": "trichluc",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Có trích lục học bạ giấy thành học bạ số không:"
+        },
+        {
+          "name": "tenhuyen",
+          "type": "VARCHAR(250)",
+          "key": "",
+          "desc": "Tên huyện"
+        },
+        {
+          "name": "phienbanthongtinhocba",
+          "type": "VARCHAR(10)",
+          "key": "",
+          "desc": "Phiên bản"
+        },
+        {
+          "name": "thongtu",
+          "type": "VARCHAR(10)",
+          "key": "",
+          "desc": "Thông tư"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [
+        {
+          "table": "thongtinsohocbasotieuhoc_quatrinhhoctap",
+          "label": "quatrinhhoctap",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "namhoc",
+              "type": "VARCHAR(9)",
+              "key": "",
+              "desc": "Năm học. Định dạng YYYY-YYYY"
+            },
+            {
+              "name": "tenlop",
+              "type": "VARCHAR(100)",
+              "key": "",
+              "desc": "Tên lớp"
+            },
+            {
+              "name": "tentruong",
+              "type": "VARCHAR(250)",
+              "key": "",
+              "desc": "Tên trường"
+            },
+            {
+              "name": "tentinh",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Tên tỉnh"
+            },
+            {
+              "name": "ngaytrangthaichuyenden",
+              "type": "DATE",
+              "key": "",
+              "desc": "Ngày trạng thái chuyển đến. Theo định dạng: YYYY-MM-DD"
+            }
+          ],
+          "n_columns": 12
+        },
+        {
+          "table": "thongtinsohocbasotieuhoc_dsbangdiem",
+          "label": "dsbangdiem",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [
+            {
+              "name": "mamonhoc",
+              "type": "VARCHAR(3)",
+              "key": "",
+              "desc": "Mã môn học Tiểu học"
+            }
+          ],
+          "attrs": [
+            {
+              "name": "tenmonhoc",
+              "type": "VARCHAR(50)",
+              "key": "",
+              "desc": "Tên môn học"
+            },
+            {
+              "name": "mucdatduoc",
+              "type": "VARCHAR(1)",
+              "key": "",
+              "desc": "Mức đạt được theo danh mục:"
+            },
+            {
+              "name": "diemkiemtradinhky",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Điểm kiểm tra định kỳ. Trường hợp học sinh miễn môn học, nhập chữ M"
+            }
+          ],
+          "n_columns": 11
+        }
+      ],
+      "n_columns": 82
+    },
+    {
+      "base_table": "thongtinsohocbasothcsthpt",
+      "pk": [],
+      "codes": [
+        {
+          "name": "madinhdanhhocba",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã định danh học bạ"
+        },
+        {
+          "name": "masogd",
+          "type": "VARCHAR(2)",
+          "key": "",
+          "desc": "Mã sở giáo dục theo danh mục của Bộ giáo dục"
+        },
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường theo danh mục của Bộ giáo dục"
+        },
+        {
+          "name": "mahocsinh",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã học sinh"
+        },
+        {
+          "name": "makhoi",
+          "type": "VARCHAR(2)",
+          "key": "",
+          "desc": "Mã khối. "
+        }
+      ],
+      "attrs": [
+        {
+          "name": "trangthaithongtinhocba",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Trạng thái học bạ"
+        },
+        {
+          "name": "trichluc",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Có trích lục học bạ giấy thành học bạ số không:"
+        },
+        {
+          "name": "tenhuyen",
+          "type": "VARCHAR(250)",
+          "key": "",
+          "desc": "Tên huyện"
+        },
+        {
+          "name": "phienbanthongtinhocba",
+          "type": "VARCHAR(10)",
+          "key": "",
+          "desc": "Phiên bản"
+        },
+        {
+          "name": "thongtu",
+          "type": "VARCHAR(30)",
+          "key": "",
+          "desc": "Thông tư"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [
+        {
+          "table": "thongtinsohocbasothcsthpt_quatrinhhoctap",
+          "label": "quatrinhhoctap",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "namhoc",
+              "type": "VARCHAR(9)",
+              "key": "",
+              "desc": "Năm học. Định dạng YYYY-YYYY"
+            },
+            {
+              "name": "tenlop",
+              "type": "VARCHAR(100)",
+              "key": "",
+              "desc": "Tên lớp"
+            },
+            {
+              "name": "tentruong",
+              "type": "VARCHAR(250)",
+              "key": "",
+              "desc": "Tên trường"
+            },
+            {
+              "name": "tentinh",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Tên tỉnh"
+            },
+            {
+              "name": "ngaytrangthaichuyenden",
+              "type": "VARCHAR(10)",
+              "key": "",
+              "desc": "Ngày trạng thái chuyển đến. Theo định dạng: YYYY-MM-DD"
+            }
+          ],
+          "n_columns": 12
+        },
+        {
+          "table": "thongtinsohocbasothcsthpt_chungchi",
+          "label": "chungchi",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "tenchungchi",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Tên chứng chỉ"
+            },
+            {
+              "name": "loaichungchi",
+              "type": "VARCHAR(500)",
+              "key": "",
+              "desc": "Loại chứng chỉ"
+            }
+          ],
+          "n_columns": 9
+        },
+        {
+          "table": "thongtinsohocbasothcsthpt_bangdiem",
+          "label": "bangdiem",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [
+            {
+              "name": "mamonhoc",
+              "type": "VARCHAR(3)",
+              "key": "",
+              "desc": "Mã môn học. "
+            }
+          ],
+          "attrs": [
+            {
+              "name": "tenmonhoc",
+              "type": "VARCHAR(20)",
+              "key": "",
+              "desc": "Tên môn học"
+            },
+            {
+              "name": "diemhocky1",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Điểm học kỳ 1. Bao gồm điểm số (0-10) và chữ (Đ,CĐ). Trường hợp học sinh miễn mô"
+            },
+            {
+              "name": "diemhocky2",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Điểm học kỳ 2"
+            },
+            {
+              "name": "diemcanam",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Điểm cả năm"
+            },
+            {
+              "name": "diemkttralai",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Điểm kiểm tra lại"
+            }
+          ],
+          "n_columns": 16
+        }
+      ],
+      "n_columns": 75
+    },
+    {
+      "base_table": "cosogiaoducdaihoc",
+      "pk": [],
+      "codes": [
+        {
+          "name": "macosodaotao",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã cơ sở đào tạo"
+        },
+        {
+          "name": "maddtc",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Mã định danh điện tử tổ chức"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tentochuctiengviet",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên cơ sở đào tạo (tiếng Việt)"
+        },
+        {
+          "name": "tentochucnuocngoai",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên cơ sở đào tạo (tiếng Anh)"
+        },
+        {
+          "name": "tendaihoc",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên Đại học mà cơ sở là đơn vị trực thuộc (nếu có)"
+        },
+        {
+          "name": "hinhthucthanhlap",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Hình thức thành lập theo danh mục của bộ ngành"
+        },
+        {
+          "name": "loaihinhtruong",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Loại hình trường theo danh mục của bộ ngành:"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 43
+    },
+    {
+      "base_table": "thongtincocautochuc",
+      "pk": [],
+      "codes": [
+        {
+          "name": "maphongban",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã phòng ban, đơn vị"
+        },
+        {
+          "name": "maddtc",
+          "type": "VARCHAR(100)",
+          "key": "",
+          "desc": "Mã định danh điện tử tổ chức"
+        },
+        {
+          "name": "maphongbancha",
+          "type": "VARCHAR(25)",
+          "key": "",
+          "desc": "Mã phòng ban đơn vị cha"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "loaiphongban",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Loại phòng ban, đơn vị theo danh mục của bộ ngành"
+        },
+        {
+          "name": "tenphongban",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên phòng ban, đơn vị"
+        },
+        {
+          "name": "quyetdinhthanhlap_soqd",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Số quyết định thành lập"
+        },
+        {
+          "name": "quyetdinhthanhlap_ngayqd",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày ký quyết định thành lập. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "trangthaihdtc",
+          "type": "VARCHAR(30)",
+          "key": "",
+          "desc": "Trạng thái hoạt động tổ chức theo danh mục của bộ ngành"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 15
+    },
+    {
+      "base_table": "thongtintoanha",
+      "pk": [],
+      "codes": [
+        {
+          "name": "matoanha",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã tòa nhà"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tentoanha",
+          "type": "VARCHAR(500)",
+          "key": "",
+          "desc": "Tên tòa nhà"
+        },
+        {
+          "name": "hinhthucsohuu",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Hình thức sở hữu theo danh mục của bộ ngành"
+        },
+        {
+          "name": "dientichxaydung",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Diện tích xây dựng (m2)"
+        },
+        {
+          "name": "sotang",
+          "type": "INT",
+          "key": "",
+          "desc": "Số tầng"
+        },
+        {
+          "name": "tongdientichsan",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Tổng diện tích sàn xây dựng (m2)"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 21
+    },
+    {
+      "base_table": "csvcvatrangthietbidatdai",
+      "pk": [],
+      "codes": [
+        {
+          "name": "magcn",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã giấy chứng nhận quyền sở hữu"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "dientichdat",
+          "type": "FLOAT",
+          "key": "",
+          "desc": "Diện tích đất (m2)"
+        },
+        {
+          "name": "hinhthucsohuu",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Hình thức sở hữu theo danh mục của bộ ngành"
+        },
+        {
+          "name": "mucdichsudung",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Mục đích sử dụng đất theo danh mục của bộ ngành"
+        },
+        {
+          "name": "nambdsudung",
+          "type": "INT",
+          "key": "",
+          "desc": "Năm bắt đầu sử dụng của khu đất. Định dạng YYYY"
+        },
+        {
+          "name": "thoigiansudung",
+          "type": "INT",
+          "key": "",
+          "desc": "Thời gian sử dụng của khu đất theo số năm"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [
+        {
+          "table": "csvcvatrangthietbidatdai_doituongsohuu_nguoivn",
+          "label": "doituongsohuu_nguoivn",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "sodinhdanh",
+              "type": "VARCHAR(12)",
+              "key": "",
+              "desc": "Số định danh cá nhân"
+            },
+            {
+              "name": "hovaten",
+              "type": "VARCHAR(255)",
+              "key": "",
+              "desc": "Tên người sở hữu"
+            },
+            {
+              "name": "namsinh",
+              "type": "INT",
+              "key": "",
+              "desc": "Năm sinh. Định dạng YYYY"
+            },
+            {
+              "name": "thangnamsinh",
+              "type": "VARCHAR(7)",
+              "key": "",
+              "desc": "Tháng năm sinh. Định dạng YYYY-MM"
+            },
+            {
+              "name": "ngaythangnamsinh",
+              "type": "DATE",
+              "key": "",
+              "desc": "Ngày tháng năm sinh. Định dạng YYYY-MM-DD có nghĩa năm-tháng-ngày."
+            }
+          ],
+          "n_columns": 12
+        },
+        {
+          "table": "csvcvatrangthietbidatdai_doituongsohuu_dinhdanhtochuc",
+          "label": "doituongsohuu_dinhdanhtochuc",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [
+            {
+              "name": "maddtc",
+              "type": "VARCHAR(35)",
+              "key": "",
+              "desc": "Mã định danh đơn vị/cơ quan/tổ chức"
+            }
+          ],
+          "attrs": [
+            {
+              "name": "tentochuc",
+              "type": "VARCHAR(255)",
+              "key": "",
+              "desc": "Tên đơn vị/cơ quan sở hữu"
+            }
+          ],
+          "n_columns": 9
+        }
+      ],
+      "n_columns": 22
+    },
+    {
+      "base_table": "phonghocgiangduongvahoitruong",
+      "pk": [],
+      "codes": [
+        {
+          "name": "maphonghocgdht",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã phòng học, giảng đường, hội trường"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tenphonghocgdht",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên phòng, giảng đường, hội trường"
+        },
+        {
+          "name": "dientich",
+          "type": "DOUBLE",
+          "key": "",
+          "desc": "Diện tích"
+        },
+        {
+          "name": "hinhthucsohuu",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Hình thức sở hữu quy định theo danh mục"
+        },
+        {
+          "name": "chongoi",
+          "type": "INT",
+          "key": "",
+          "desc": "Quy mô chỗ ngồi"
+        },
+        {
+          "name": "tinhtrangcsvc",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Tình trạng CSVC quy định theo danh mục của bộ ngành"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 24
+    },
+    {
+      "base_table": "ttchunghocvien",
+      "pk": [],
+      "codes": [
+        {
+          "name": "macosodaotao",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã cơ sở đào tạo quản lý"
+        },
+        {
+          "name": "mahocvien",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Mã sinh viên tại trường"
+        },
+        {
+          "name": "masobhxh",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Mã sổ bảo hiểm xã hội"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "tentruong",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Tên trường Đại học"
+        },
+        {
+          "name": "thongtinphuhuynh",
+          "type": "JSON",
+          "key": "",
+          "desc": "Thông tin phụ huynh học sinh"
+        },
+        {
+          "name": "thongtincha",
+          "type": "JSON",
+          "key": "",
+          "desc": "Thông tin cha"
+        },
+        {
+          "name": "hotencha",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Họ tên cha"
+        },
+        {
+          "name": "sodinhdanh",
+          "type": "VARCHAR(12)",
+          "key": "",
+          "desc": "Số định danh của cha"
+        }
+      ],
+      "merged_variants": [
+        "nguoivn",
+        "congdannuocngoai"
+      ],
+      "child_entities": [
+        {
+          "table": "ttchunghocvien_nguoivn_giaytodinhdanhcn",
+          "label": "giaytodinhdanhcn",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "loaigiayto",
+              "type": "VARCHAR(2)",
+              "key": "",
+              "desc": "Loại giấy tờ cá nhân theo danh mục "
+            },
+            {
+              "name": "sogiayto",
+              "type": "VARCHAR(30)",
+              "key": "",
+              "desc": "Số giấy tờ"
+            }
+          ],
+          "n_columns": 9
+        },
+        {
+          "table": "ttchunghocvien_congdannuocngoai_giaytodinhdanhnn",
+          "label": "giaytodinhdanhnn",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "loaigiaytoxnc",
+              "type": "VARCHAR(2)",
+              "key": "",
+              "desc": "Loại giấy tờ xuất nhập cảnh gồm hộ chiếu hoặc giấy tờ có giá trị đi lại quốc tế"
+            },
+            {
+              "name": "sogiaytoxnc",
+              "type": "VARCHAR(50)",
+              "key": "",
+              "desc": "Số giấy tờ xuất nhập cảnh"
+            }
+          ],
+          "n_columns": 9
+        }
+      ],
+      "n_columns": 29
+    },
+    {
+      "base_table": "thongtinhoctapsvdh",
+      "pk": [],
+      "codes": [
+        {
+          "name": "macosodaotao",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã cơ sở đào tạo"
+        },
+        {
+          "name": "mahocvien",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Mã sinh viên tại trường"
+        },
+        {
+          "name": "mahinhthucdaotao",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Hình thức đào tạo theo Luật giáo dục đại học sửa đổi 2018 số 34/2018/QH14"
+        },
+        {
+          "name": "manganh",
+          "type": "VARCHAR(7)",
+          "key": "",
+          "desc": "Mã ngành đào tạo theo danh mục được quy định tại Thông tư số 26/2020/TT-BLĐTBXH "
+        },
+        {
+          "name": "matrangthai",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Mã Trạng thái học theo danh mục dựa theo Quyết định số 4998/QĐ BGDĐT ngày 31 thá"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "idthongtinhoctap",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Id thông tin học tập"
+        },
+        {
+          "name": "loaihocvien",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Loại học viên quy định theo danh mục của bộ ngành :"
+        },
+        {
+          "name": "doituongdauvao",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Đối tượng đầu vào: "
+        },
+        {
+          "name": "ketquatuyensinh",
+          "type": "VARCHAR(500)",
+          "key": "",
+          "desc": "Kết quả tuyển sinh"
+        },
+        {
+          "name": "quyetdinhnhaphoc",
+          "type": "JSON",
+          "key": "",
+          "desc": "Quyết định nhập học, trúng tuyển. Thông tin không yêu cầu có dữ liệu"
+        }
+      ],
+      "merged_variants": [
+        "nguoivn",
+        "congdannuocngoai"
+      ],
+      "child_entities": [
+        {
+          "table": "ThongTinHocTapSVDH_QuyetDinhThoiHocBaoLuu",
+          "label": "QuyetDinhThoiHocBaoLuu",
+          "cardinality": "1-1",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "soqd",
+              "type": "VARCHAR(30)",
+              "key": "",
+              "desc": "Số quyết định. Bắt buộc khi QuyetDinhThoiHocBaoLuu có dữ liệu"
+            },
+            {
+              "name": "ngaythangnam",
+              "type": "DATE",
+              "key": "",
+              "desc": "Ngày tháng năm quyết định thôi học. Định dạng YYYY-MM-DD"
+            },
+            {
+              "name": "thangnam",
+              "type": "VARCHAR(7)",
+              "key": "",
+              "desc": "Tháng năm quyết định thôi học. Định dạng YYYY-MM"
+            },
+            {
+              "name": "nam",
+              "type": "VARCHAR(4)",
+              "key": "",
+              "desc": "Năm quyết định thôi học. Định dạng YYYY"
+            },
+            {
+              "name": "coquanqd",
+              "type": "VARCHAR(200)",
+              "key": "",
+              "desc": "Cơ quan quyết định. Bắt buộc khi QuyetDinhThoiHocBaoLuu có dữ liệu"
+            }
+          ],
+          "n_columns": 12
+        }
+      ],
+      "n_columns": 63
+    },
+    {
+      "base_table": "VanBangChungChi",
+      "pk": [],
+      "codes": [
+        {
+          "name": "mahocvien",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Mã học viên"
+        },
+        {
+          "name": "matruong",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã trường."
+        },
+        {
+          "name": "madinhdanhvbcc",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Mã định danh văn bằng chứng chỉ"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "sodinhdanh",
+          "type": "VARCHAR(12)",
+          "key": "",
+          "desc": "Số định danh công dân"
+        },
+        {
+          "name": "hovaten",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Họ và tên công dân"
+        },
+        {
+          "name": "ngaythangnamsinh",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày tháng năm sinh. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "thangnamsinh",
+          "type": "VARCHAR(7)",
+          "key": "",
+          "desc": "Tháng năm sinh. Định dạng YYYY-MM"
+        },
+        {
+          "name": "namsinh",
+          "type": "VARCHAR(4)",
+          "key": "",
+          "desc": "Năm sinh. Định dạng YYYY"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [
+        {
+          "table": "VanBangChungChi_ThongTinHieuChinh",
+          "label": "ThongTinHieuChinh",
+          "cardinality": "1-1",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "soquyetdinhhieuchinh",
+              "type": "VARCHAR(50)",
+              "key": "",
+              "desc": "Số quyết định hiệu chỉnh"
+            },
+            {
+              "name": "ngayquyetdinhhieuchinh",
+              "type": "DATE",
+              "key": "",
+              "desc": "Ngày quyết định hiệu chỉnh"
+            },
+            {
+              "name": "nguoiky_hovaten",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Họ tên người ký"
+            },
+            {
+              "name": "nguoiky_sodinhdanh",
+              "type": "VARCHAR(12)",
+              "key": "",
+              "desc": "Số định danh cá nhân người ký"
+            },
+            {
+              "name": "nguoiky_chucdanh",
+              "type": "VARCHAR(150)",
+              "key": "",
+              "desc": "Chức danh người ký"
+            }
+          ],
+          "n_columns": 24
+        }
+      ],
+      "n_columns": 49
+    },
+    {
+      "base_table": "KhenThuong",
+      "pk": [],
+      "codes": [],
+      "attrs": [
+        {
+          "name": "doituong",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Đối tượng khen thưởng theo danh mục"
+        },
+        {
+          "name": "namkhenthuong",
+          "type": "INT",
+          "key": "",
+          "desc": "Năm khen thưởng. Định dạng YYYY"
+        },
+        {
+          "name": "quyetdinhkhenthuong_soqd",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Số quyết định khen thưởng"
+        },
+        {
+          "name": "quyetdinhkhenthuong_ngayqd",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày quyết định. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "thanhtichkhenthuong",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Thành tích thi đua, khen thưởng"
+        }
+      ],
+      "merged_variants": [
+        "NguoiVN",
+        "CongDanNuocNgoai"
+      ],
+      "child_entities": [],
+      "n_columns": 20
+    },
+    {
+      "base_table": "KyLuat",
+      "pk": [],
+      "codes": [
+        {
+          "name": "macosodaotao",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Mã cơ sở đào tạo quản lý"
+        },
+        {
+          "name": "maloaikyluat",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Loại kỷ luật theo danh mục căn cứ Nghị định số 112/2020/NĐ-CP ngày 18 tháng 9 nă"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "doituong",
+          "type": "VARCHAR(1)",
+          "key": "",
+          "desc": "Đối tượng kỷ luật theo danh mục"
+        },
+        {
+          "name": "hanhvikyluat",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Hành vi kỷ luật"
+        },
+        {
+          "name": "capkyluat",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Cấp kỷ luật"
+        },
+        {
+          "name": "lydokyluat",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Lý do"
+        },
+        {
+          "name": "quyetdinhkyluat_soqd",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Số quyết định"
+        }
+      ],
+      "merged_variants": [
+        "NguoiVN",
+        "CongDanNuocNgoai"
+      ],
+      "child_entities": [],
+      "n_columns": 19
+    },
+    {
+      "base_table": "ThongTinCanBoGiangVien",
+      "pk": [],
+      "codes": [
+        {
+          "name": "macanbo",
+          "type": "VARCHAR(200)",
+          "key": "",
+          "desc": "Mã cán bộ"
+        },
+        {
+          "name": "masobhxh",
+          "type": "VARCHAR(200)",
+          "key": "",
+          "desc": "Số sổ bảo hiểm xã hội"
+        },
+        {
+          "name": "makhungnlngoaingu",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Mã khung năng lực ngoại ngữ theo danh mục của bộ ngành"
+        }
+      ],
+      "attrs": [
+        {
+          "name": "email",
+          "type": "VARCHAR(150)",
+          "key": "",
+          "desc": "Email"
+        },
+        {
+          "name": "sodienthoai",
+          "type": "VARCHAR(20)",
+          "key": "",
+          "desc": "Số điện thoại"
+        },
+        {
+          "name": "chuyenmondaotao",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Chuyên môn được đào tạo quy định theo danh mục của bộ ngành"
+        },
+        {
+          "name": "bacsiduocsicki",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Bác sĩ/Dược sĩ chuyên khoa I:"
+        },
+        {
+          "name": "bacsiduocsickii",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Bác sĩ/Dược sĩ chuyên khoa II:"
+        }
+      ],
+      "merged_variants": [
+        "NguoiVN",
+        "CongDanNuocNgoai"
+      ],
+      "child_entities": [
+        {
+          "table": "ThongTinCanBoGiangVien_NguoiVN_GiayToDinhDanhCN",
+          "label": "GiayToDinhDanhCN",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "sogiayto",
+              "type": "VARCHAR(30)",
+              "key": "",
+              "desc": "Số giấy tờ"
+            },
+            {
+              "name": "ngaycap",
+              "type": "DATE",
+              "key": "",
+              "desc": "Ngày cấp giấy tờ. Định dạng YYYY-MM-DD"
+            },
+            {
+              "name": "noicap",
+              "type": "VARCHAR(300)",
+              "key": "",
+              "desc": "Nơi cấp giấy tờ"
+            }
+          ],
+          "n_columns": 11
+        },
+        {
+          "table": "ThongTinCanBoGiangVien_CongDanNuocNgoai_GiayToDinhDanhNN",
+          "label": "GiayToDinhDanhNN",
+          "cardinality": "1-n",
+          "pk": [],
+          "codes": [],
+          "attrs": [
+            {
+              "name": "sogiaytoxnc",
+              "type": "VARCHAR(50)",
+              "key": "",
+              "desc": "Số giấy tờ xuất nhập cảnh"
+            }
+          ],
+          "n_columns": 9
+        }
+      ],
+      "n_columns": 41
+    },
+    {
+      "base_table": "PhongBanDonViCongTac",
+      "pk": [],
+      "codes": [],
+      "attrs": [
+        {
+          "name": "soqd",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Số quyết định"
+        },
+        {
+          "name": "ngayqd",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày quyết định. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "donvichinh",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là đơn vị chính:"
+        },
+        {
+          "name": "donvigiangday",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là đơn vị giảng dạy:"
+        },
+        {
+          "name": "tungay",
+          "type": "DATE",
+          "key": "",
+          "desc": "Thời gian bắt đầu công tác. Định dạng YYYY-MM-DD"
+        }
+      ],
+      "merged_variants": [
+        "NguoiVN",
+        "CongDanNuocNgoai"
+      ],
+      "child_entities": [],
+      "n_columns": 16
+    },
+    {
+      "base_table": "QuaTrinhCongTacCuaCanBoGiangVien",
+      "pk": [],
+      "codes": [],
+      "attrs": [
+        {
+          "name": "nganhchinh",
+          "type": "BOOLEAN",
+          "key": "",
+          "desc": "Là ngành chính:"
+        },
+        {
+          "name": "donvithinhgiang",
+          "type": "VARCHAR(36)",
+          "key": "",
+          "desc": "Đơn vị thỉnh giảng"
+        }
+      ],
+      "merged_variants": [
+        "NguoiVN",
+        "CongDanNuocNgoai"
+      ],
+      "child_entities": [],
+      "n_columns": 11
+    },
+    {
+      "base_table": "QuaTrinhDaoTaoBoiDuongCuaCanBoGiangVien",
+      "pk": [],
+      "codes": [],
+      "attrs": [
+        {
+          "name": "quocgiadaotao",
+          "type": "VARCHAR(3)",
+          "key": "",
+          "desc": "Quốc gia đào tạo theo danh mục quy định tại phụ lục của tài liệu"
+        },
+        {
+          "name": "cosodaotao",
+          "type": "VARCHAR(100)",
+          "key": "",
+          "desc": "Cơ sở đào tạo"
+        },
+        {
+          "name": "thoigianbddaotao",
+          "type": "DATE",
+          "key": "",
+          "desc": "Thời gian bắt đầu đào tạo. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "thoigianktdaotao",
+          "type": "DATE",
+          "key": "",
+          "desc": "Thời gian kết thúc đào tạo. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "namtn",
+          "type": "INT",
+          "key": "",
+          "desc": "Năm tốt nghiệp. Định dạng YYYY"
+        }
+      ],
+      "merged_variants": [
+        "NguoiVN",
+        "CongDanNuocNgoai"
+      ],
+      "child_entities": [],
+      "n_columns": 15
+    },
+    {
+      "base_table": "DanhSachNganhDaoTao",
+      "pk": [],
+      "codes": [],
+      "attrs": [
+        {
+          "name": "qdmonganh_soqd",
+          "type": "VARCHAR(50)",
+          "key": "",
+          "desc": "Số quyết định"
+        },
+        {
+          "name": "qdmonganh_ngayqd",
+          "type": "DATE",
+          "key": "",
+          "desc": "Ngày quyết định. Định dạng YYYY-MM-DD"
+        },
+        {
+          "name": "tennganhmolandau",
+          "type": "VARCHAR(250)",
+          "key": "",
+          "desc": "Tên ngành mở lần đầu"
+        },
+        {
+          "name": "coquanbanhanh",
+          "type": "VARCHAR(250)",
+          "key": "",
+          "desc": "Cơ quan ban hành"
+        },
+        {
+          "name": "nguoiky",
+          "type": "VARCHAR(250)",
+          "key": "",
+          "desc": "Người ký"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 23
+    },
+    {
+      "base_table": "ChuongTrinhDaoTao",
+      "pk": [],
+      "codes": [],
+      "attrs": [
+        {
+          "name": "tenchuongtrinh",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên chương trình"
+        },
+        {
+          "name": "tenchuongtrinhta",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên chương trình bằng tiếng Anh"
+        },
+        {
+          "name": "tencsdtnuocngoai",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Tên cơ sở đào tạo nước ngoài"
+        },
+        {
+          "name": "namtuyensinh",
+          "type": "INT",
+          "key": "",
+          "desc": "Năm bắt đầu tuyển sinh. Định dạng YYYY"
+        },
+        {
+          "name": "diachichitiet",
+          "type": "VARCHAR(255)",
+          "key": "",
+          "desc": "Địa chỉ chi tiết"
+        }
+      ],
+      "merged_variants": [],
+      "child_entities": [],
+      "n_columns": 38
+    }
+  ]
+}
